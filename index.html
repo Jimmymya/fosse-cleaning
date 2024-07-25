@@ -11,7 +11,24 @@
     display: inline-block; /* Makes the ul shrink to fit its contents */
     animation: rotate 5s linear infinite; /* Apply the rotation animation */
 }
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+}
 
+.shake {
+  animation: shake 0.5s ease-in-out infinite;
+}
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -122,7 +139,7 @@ p a:hover {
     </nav>
     <main>
         <section id="about">
-            <h2>About Us</h2>
+            <h2 class="shake">About Us</h2>
             <p>We are a small family business with over 30 years of experience in the cleaning industry. Our services include quality office and commercial cleaning. We are fully insured and DBS checked.</p>
         </section>
         <section id="services">
