@@ -6,6 +6,19 @@
     <title>FOSSE Cleaning Services</title>
     <style>
 
+@keyframes expandContract {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+.expand-contract {
+  animation: expandContract 2s ease-in-out infinite;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -222,7 +235,7 @@ p a:hover {
         </section>
         <section id="contact">
             <h2 class="fade-in">Contact Us</h2>
-            <p>Email: fosse.cleaning@yahoo.com</p>
+            <p class="expand-contract">Email: fosse.cleaning@yahoo.com</p>
             <p>Phone: 07546132399</p>
         </section>
     </main>
