@@ -6,6 +6,18 @@
     <title>FOSSE Cleaning Services</title>
     <style>
 
+@keyframes flip {
+  from {
+    transform: perspective(400px) rotateY(0);
+  }
+  to {
+    transform: perspective(400px) rotateY(360deg);
+  }
+}
+
+.flip {
+  animation: flip 2s infinite;
+}
 
 @keyframes slideIn {
   from {
@@ -160,7 +172,7 @@ p a:hover {
     <header>
         <h1 id="underconstruction">SITE UNDER  CONSTRUCTION</h1>
         <h1 class="slide-in">FOSSE Cleaning Services</h1>
-        <p>Your Reliable Cleaning Partner</p>
+        <p class="flip">Your Reliable Cleaning Partner</p>
     </header>
     <nav>
         <!-- Add navigation links here (e.g., Home, Services, Contact) -->
