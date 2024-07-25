@@ -6,6 +6,33 @@
     <title>FOSSE Cleaning Services</title>
     <style>
 
+@keyframes tada {
+  from {
+    transform: scale(1);
+  }
+  10%, 20% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale(1.1) rotate(3deg);
+  }
+  40%, 60%, 80% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+  to {
+    transform: scale(1) rotate(0);
+  }
+}
+
+.tada {
+  animation: tada 1s ease-in-out;
+  font-weight: 4em;
+      text-align: center;
+      color: red;
+}
+}
+
+
 @keyframes expandContract {
   0%, 100% {
     transform: scale(1);
@@ -212,7 +239,7 @@ p a:hover {
 </head>
 <body>
     <header>
-        <h1 id="underconstruction">SITE UNDER  CONSTRUCTION</h1>
+        <h1 class="tada">SITE UNDER  CONSTRUCTION</h1>
         <h1 class="slide-in">FOSSE Cleaning Services</h1>
         <p class="flip">Your Reliable Cleaning Partner</p>
     </header>
