@@ -7,6 +7,20 @@
     <style>
 
 
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 1s ease-out;
+}
+
+
 @keyframes scale {
   from {
     transform: scale(1);
@@ -145,7 +159,7 @@ p a:hover {
 <body>
     <header>
         <h1 id="underconstruction">SITE UNDER  CONSTRUCTION</h1>
-        <h1>FOSSE Cleaning Services</h1>
+        <h1 class="slide-in">FOSSE Cleaning Services</h1>
         <p>Your Reliable Cleaning Partner</p>
     </header>
     <nav>
