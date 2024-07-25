@@ -6,6 +6,34 @@
     <title>FOSSE Cleaning Services</title>
     <style>
 
+@keyframes hinge {
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+    opacity: 1;
+  }
+  20%, 60% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    opacity: 1;
+  }
+  40%, 80% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(700px);
+    opacity: 0;
+  }
+}
+
+.hinge {
+  animation: hinge 2s;
+}
+
+
+
 @keyframes tada {
   from {
     transform: scale(1);
@@ -262,7 +290,7 @@ p a:hover {
         <section id="contact">
             <h2 class="fade-in">Contact Us</h2>
             <p class="expand-contract">Email: fosse.cleaning@yahoo.com</p>
-            <p>Phone: 07546132399</p>
+            <p class="hinge">Phone: 07546132399</p>
         </section>
     </main>
     <footer>
