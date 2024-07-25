@@ -6,6 +6,22 @@
     <title>FOSSE Cleaning Services</title>
     <style>
 
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
 @keyframes flip {
   from {
     transform: perspective(400px) rotateY(0);
@@ -183,7 +199,7 @@ p a:hover {
             <p class="blink">We are a small family business with over 30 years of experience in the cleaning industry. Our services include quality office and commercial cleaning. We are fully insured and DBS checked.</p>
         </section>
         <section id="services">
-            <h2>Our Services</h2>
+            <h2 class="bounce">Our Services</h2>
             <ul type="circle" class="rotating-list">
                 <li>Regular office cleaning</li>
                 <li>One-off deep cleaning</li>
