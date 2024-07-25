@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOSSE Cleaning Services</title>
     <style>
+
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.scale {
+  animation: scale 2s ease-in-out infinite alternate;
+}
        /* styles.css */
 .rotating-list {
     list-style-type: circle; /* Ensure the list style is circles */
@@ -140,7 +154,7 @@ p a:hover {
     <main>
         <section id="about">
             <h2 class="shake">About Us</h2>
-            <p>We are a small family business with over 30 years of experience in the cleaning industry. Our services include quality office and commercial cleaning. We are fully insured and DBS checked.</p>
+            <p class="scale">We are a small family business with over 30 years of experience in the cleaning industry. Our services include quality office and commercial cleaning. We are fully insured and DBS checked.</p>
         </section>
         <section id="services">
             <h2>Our Services</h2>
