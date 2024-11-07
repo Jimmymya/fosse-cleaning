@@ -3,43 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/animations.css">
-     <link rel="stylesheet" href="./styles/main.css">
-
-    <title>FOSSE Cleaning Services</title>
-    
+    <title>Professional Cleaning Services</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1 class="light-speed-out">SITE UNDER  CONSTRUCTION</h1>
-        <h1 class="light-speed-in">FOSSE Cleaning Services</h1>
-        <p class="flip">Your Reliable Cleaning Partner</p>
-    </header>
-    <nav>
-        <!-- Add navigation links here (e.g., Home, Services, Contact) -->
-    </nav>
-    <main>
-        <section id="about">
-            <h2 class="shake">About Us</h2>
-            <p>We are a small family business with over 30 years of experience in the cleaning industry. Our services include quality office and commercial cleaning. We are fully insured and DBS checked.</p>
-        </section>
-        <section id="services">
-            <h2 class="bounce">Our Services</h2>
-            <ul type="square">
-                <li>Regular office cleaning</li>
-                <li>One-off deep cleaning</li>
-                <li>Commercial space cleaning</li>
-                <!-- Add more services as needed -->
+        <div class="logo">CleanCo</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-        <section id="contact">
-            <h2 class="jack-in-the-box">Contact Us</h2>
-            <p>Email: fosse.cleaning@yahoo.com</p>
-            <p>Phone: 07546132399</p>
-        </section>
-    </main>
+        </nav>
+        <a href="#contact" class="cta-button">Get a Free Quote</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Professional Cleaning Services You Can Trust</h1>
+        <p>From homes to offices, we make spaces shine.</p>
+        <a href="#services" class="cta-button">Our Services</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At CleanCo, we take pride in providing high-quality, reliable cleaning services. Our team is dedicated to keeping your home or business spotless.</p>
+        <img src="about-image.jpg" alt="Our team at work">
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Residential Cleaning</h3>
+                <p>Comprehensive cleaning for homes and apartments.</p>
+                <a href="#contact" class="cta-button">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Commercial Cleaning</h3>
+                <p>Efficient cleaning solutions for offices and workspaces.</p>
+                <a href="#contact" class="cta-button">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Deep Cleaning</h3>
+                <p>Intensive cleaning for a spotless, fresh environment.</p>
+                <a href="#contact" class="cta-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"CleanCo made my home feel like new! I couldn't be happier."</p>
+            <h4>- Sarah J.</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Our office has never looked better. Great job, CleanCo!"</p>
+            <h4>- Mike W.</h4>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want a quote? Reach out!</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 FOSSE Cleaning Services</p>
+        <p>&copy; 2024 CleanCo. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+        </div>
     </footer>
 </body>
 </html>
